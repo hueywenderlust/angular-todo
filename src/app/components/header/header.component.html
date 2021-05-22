@@ -1,0 +1,7 @@
+<header>
+  <h1>{{ title }}</h1>
+
+  <!-- this button will only show if on the empty route -->
+  <app-button *ngIf="hasRoute('/')" color="{{showAddTask ? 'red' : 'green'}}" text="{{showAddTask ? 'close' : 'add'}}" (btnClick)="toggleAddTask()"></app-button>
+
+</header>
